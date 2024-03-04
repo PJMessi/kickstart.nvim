@@ -42,3 +42,7 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('c', '<M-BS>', '<C-w>', { noremap = true, desc = 'Delete a word before the cursor' })
 vim.keymap.set('i', '<M-BS>', '<C-w>', { noremap = true, desc = 'Delete a word before the cursor' })
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = "Open Vim's default explore in current buffer" })
+
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = 'Move the selection downward by 1 line' })
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = 'Move the selection upward by 1 line' })
+
