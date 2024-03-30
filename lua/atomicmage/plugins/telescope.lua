@@ -1,5 +1,6 @@
 local M = {}
 
+
 M.setup = function()
   return { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',

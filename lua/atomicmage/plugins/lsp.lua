@@ -67,7 +67,9 @@ M.setup = function(opts)
 
           -- Jump to the implementation of the word under your cursor.
           --  Useful when your language has ways of declaring types without an actual implementation.
-          map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
+          -- map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
+          -- atomicmage
+          map('gi', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
 
           -- Jump to the type of the word under your cursor.
           --  Useful when you're not sure what type a variable is and you want to see
@@ -179,6 +181,7 @@ M.setup = function(opts)
           },
         },
       }
+
 
       -- Ensure the servers and tools above are installed
       --  To check the current status of installed tools and/or manually install

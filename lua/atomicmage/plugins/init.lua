@@ -219,5 +219,14 @@ require('lazy').setup {
   require("atomicmage.plugins.harpoon").setup(),
 
   require("atomicmage.plugins.fugitive").setup(),
+
+  require("atomicmage.plugins.trouble").setup(),
+
+ {
+    "https://github.com/PJMessi/hanger",
+    -- dir = "/Users/prajwalshrestha/Desktop/personal-projects/nvim/hanger",
+    lazy = false,
+    cmd = { "CPath" },
+  },
 }
 
