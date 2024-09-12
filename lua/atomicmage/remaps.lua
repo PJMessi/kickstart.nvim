@@ -98,6 +98,27 @@ function RunSingleTest()
   end
 end
 
+-- Function to run tests in the file
+function RunFileTests()
+  local file_ext = vim.fn.expand("%:e")
+  if file_ext == "go" then
+    -- Get the current file directory name
+    local dirname = vim.fn.expand("%:p:h")
+
+    -- Build the command to run the specific test function
+    local cmd = "make test-single path=" .. dirname
+
+    print(cmd)
+
+    -- Open a new split terminal and run the command
+    vim.cmd("split")
+    vim.cmd("term " .. cmd)
+  else
+    print("Test not configured")
+    return
+  end
+end
+
 -- Map the function to a keybinding
 vim.api.nvim_set_keymap('n', '<leader>rt', ':lua RunSingleTest()<CR>', { noremap = true, silent = true })
 
