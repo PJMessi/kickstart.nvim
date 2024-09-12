@@ -222,7 +222,13 @@ require('lazy').setup {
 
   require("atomicmage.plugins.trouble").setup(),
 
- {
+  require("atomicmage.plugins.supermaven").setup(),
+
+  require("atomicmage.plugins.nvim-autopairs").setup(),
+
+  require("atomicmage.plugins.copilot-chat").setup(),
+
+  {
     "https://github.com/PJMessi/hanger",
     -- dir = "/Users/prajwalshrestha/Desktop/personal-projects/nvim/hanger",
     lazy = false,
