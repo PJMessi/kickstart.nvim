@@ -222,7 +222,7 @@ require('lazy').setup {
 
   require("atomicmage.plugins.trouble").setup(),
 
-  require("atomicmage.plugins.supermaven").setup(),
+  -- require("atomicmage.plugins.supermaven").setup(),
 
   require("atomicmage.plugins.nvim-autopairs").setup(),
 
