@@ -242,5 +242,7 @@ require('lazy').setup {
 
   require("atomicmage.plugins.no-neck-pain").setup(),
 
+  require("atomicmage.plugins.undo-tree").setup(),
+
   require("atomicmage.plugins.hanger").setup(),
 }
