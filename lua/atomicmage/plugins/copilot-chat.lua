@@ -1,7 +1,7 @@
 local M = {}
 
 M.setup = function()
-  return { -- Autocompletion
+  return {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {

@@ -11,3 +11,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+
+vim.api.nvim_create_autocmd('VimEnter', {
+  desc = 'Enable centered layout on startup',
+  command = "NoNeckPain"
+})
